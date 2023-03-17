@@ -1,0 +1,393 @@
+/*RESET + FONTE*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins&family=Ubuntu:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;;
+}
+
+/*BACKGROUND*/
+
+body{
+    background-color: #2C3333;
+    font-size: 20px;
+}
+
+/*HEADER*/
+
+header {
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+    margin-bottom: 50px;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo-img {
+    width: 56px;
+    height: 56px;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    margin: 0 15px;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 400;
+}
+.login-button button {
+    border: none;
+    padding: 15px 15px;
+    border-radius: 5px;
+    background-color: #0187a7;
+}
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2rem;
+    height: 56px;
+    width: 56px;
+}
+.mobile-menu-icon {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+.icon{
+    height: 56px;
+    width: 56px;
+}
+
+/*------------------------------------------------------*/
+
+/*INDEX.html*/
+
+/*CARROSSEL*/
+
+.container{
+    position: relative;
+    padding: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.galery-wrapper{
+    overflow-x: auto;
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+}
+.galery{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+.left-arrow, .right-arrow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 30px;
+    line-height: 250px;
+    width: 1.3rem;
+    text-align: center;
+    color: #03224C;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, whitesmoke 200%);
+    opacity: 0.1;
+    transition: all 0.3s ease-in-out;
+}
+.right-arrow{
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, transparent 0%, whitesmoke 200%);
+}
+.right-arrow:hover{
+    opacity: 1;
+}
+.left-arrow:hover{
+    opacity: 1;
+}
+.item{
+    flex-shrink: 0;
+    opacity: 0.6;
+    transition: all 0.6s ease-in-out;
+}
+.current-item{
+    opacity: 1;
+    border: 1px solid #8D7B68;
+    box-shadow: 0 0 10px #f5f5f4;
+}
+.galery-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+/*BREAKER*/
+
+.hr{
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 0;
+    border-top: medium double #CCC;
+    height: 1px;
+    overflow: visible;
+    padding: 0;
+    color: #f5f5f4;
+    text-align: center;
+}
+.hr5::after {
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.4em;
+    padding: 0 0.3em;
+    background: #f5f5f4;
+  }
+
+/*SOBRE*/
+
+.sobre-nos{
+    color: #f5f5f4;
+    padding: 50px;
+}
+.sobre{
+    display: flex;
+    justify-content: center;
+}
+.sobre-title {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-size: 2.5rem;
+    border-bottom: 6px double #f5f5f4;
+}
+.sobre-title a {
+    color: #f5f5f4;
+    text-decoration: none;
+}
+.sobre-text{
+    color: #c6c6c6;
+    max-width: 900px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+.sobre-text p{
+    font-family: 'Poppins', sans-serif;
+}
+.sobre-img img{
+    display: flex;
+    margin: 0 auto;
+}
+
+/*FIM DO INDEX.html*/
+
+/*------------------------------------------------------*/
+
+/*MEMBROS.html*/
+
+.membro{
+    color: #f5f5f4;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.6rem;
+}
+.membros{
+    padding: 1.6rem;
+    border: 2px solid #2E3840;
+    box-shadow: 0 0 10px#2E3840 ;
+}
+.membros-title{
+    text-align: center;
+}
+
+/*FIM DO MEMBROS.html*/
+
+/*------------------------------------------------------*/
+
+/*FOOTER*/
+
+footer .container-footer{
+    background-color: #24252a;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col h4{
+    color: #f5f5f4;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+.footer-col h4::before{
+    content: '';
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    background-color: #e91e63;
+    bottom: -10px;
+}
+.footer-col ul li{
+    padding: 10px 0;
+}
+.footer-col ul li a{
+    color: #f5f5f4;
+    text-decoration: none;
+    font-size: 1.5rem;
+    opacity: 0.7;
+    transform: 0.5s;
+}
+.footer-col ul li a:hover{
+    opacity: 1;
+}
+.footer-col img{
+    height: 200px;
+}
+.footer-col input{
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+}
+.footer-col .inputSubmit{
+    padding: 0px 20px;
+    background-color: #e91e63;
+    border: none;
+    color: #f5f5f4;
+}
+.col p{
+    color: #f5f5f4;
+}
+.row hr{
+    opacity: 0.7;
+}
+.row .socialIcons i{
+    display: inline-block;
+    color: #f5f5f4;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: 0.5s;
+}
+.row .socialIcons i:hover{
+    color: #e91e63;
+}
+
+/*RESPONSIVO*/
+
+@media screen and (max-width: 730px) {
+    /*HEADER*/
+    
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+
+    /*CARROSSEL*/
+
+    .container{
+        position: relative;
+        padding: 15px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /*SOBRE*/
+
+    .sobre-title{
+        font-size: 1.8rem;
+    }
+    .sobre-text p{
+        font-size: 1rem;
+    }
+    .sobre-img img{
+        width: 380px;
+    }
+
+    /*FOOTER*/
+
+    footer .row{
+        margin: 0 auto;
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+    footer .footer-col ul{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+/*SOBRE NÓS.html*/
