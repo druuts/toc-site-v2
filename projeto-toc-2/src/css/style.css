@@ -207,6 +207,7 @@ header {
 .sobre-img img{
     display: flex;
     margin: 0 auto;
+    width: 600px;
 }
 
 /*FIM DO INDEX.html*/
